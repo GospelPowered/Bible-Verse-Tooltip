@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.3" type="plugin" group="system">
+	<name>System - Bible Verse Tooltip</name>
+	<author>Gospel Powered</author>
+	<creationDate>16 June 2014</creationDate>
+	<copyright>Copyright (C) 2014 Gospel Powered. All rights &lt;br/&gt;&lt;br/&gt;reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>hello@gospelpowered.com </authorEmail>
+	<authorUrl>www.gospelpowered.com</authorUrl>
+	<version>1.0.0</version>
+	<description>A plugin that brings the power of &lt;a href=&quot;http://www.reftagger.com&quot; target=&quot;_blank&quot;&gt;Reftagger&lt;/a&gt; to Joomla. Bible Verse Tooltip creates a link for every Bible reference on your website and allows you to hover over that link to see the verse directly within your website.&lt;br/&gt;&lt;br/&gt; Brought to you by the team at &lt;a href=&quot;http://www.gospelpowered.com&quot; target=&quot;_blank&quot;&gt;Gospel Powered&lt;/a&gt; - equipping the church to do ministry online.&lt;br/&gt;&lt;br/&gt;</description>
+	<files>
+		<filename plugin="bibleversetooltip">bibleversetooltip.php</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field type="spacer" name="myspacer" class="text" label="&lt;b&gt;Settings&lt;/b&gt;"/>
+				<field name="translation" type="list" default="ESV" label="Choose a bible translation">
+					 	<option value="AB">Amplified Bible</option>
+  						<option value="ASV">American Standard Version</option>
+						<option value="DAR">Darby</option>
+  						<option value="ESV">English Standard Version</option>
+  						<option value="GW">God's Word</option>
+  						<option value="HCSB">Holman Christian Standard Bible</option>
+  						<option value="KJV">King James Version</option>
+  						<option value="LEB">Lexham English Bible</option>
+  						<option value="MESSAGE">Message Bible</option>
+  						<option value="NASB">New American Standard Bible</option>
+  						<option value="NCV">New Century Version</option>
+  						<option value="NIV">New International Version</option>
+  						<option value="NIRV">New International Reader's Version</option>
+  						<option value="NKJV">New King James Version</option>
+  						<option value="NLT">New Living Translation</option>
+  						<option value="DOURAYRHEIMS">Douay-Rheims</option>
+  						<option value="YLT">Young's Literal Translation</option>
+
+				</field>
+				<field name="caseInsensitive" type="radio" default="!true" 	class="btn-group btn-group-yesno" label="Require uppercase" description="If set to Yes bible verses starting with a  &lt;br/&gt;lower case will not show eg luke 1:1">
+  					<option value="!true">Yes</option>
+  					<option value="!false">No</option>
+				</field>
+				<field type="spacer" name="myspacer2" class="text" label="&lt;b&gt;Style&lt;/b&gt;"/>
+
+				<field name="rounded" type="radio" default="true" class="btn-group btn-group-yesno" label="Rounded corners">
+   					<option value="true">Yes</option>
+ 					<option value="false">No</option>
+				</field>
+				<field name="dropShadow" type="radio" default="true" class="btn-group btn-group-yesno" label="Drop shadow">
+   					<option value="true">Yes</option>
+ 					<option value="false">No</option>
+				</field>
+				<field name="headingColor" type="color" default="#333333" label="Heading color"/>
+				<field name="headingBG" type="color" default="#E7E7E7" label="Heading background"/>
+				<field name="bodyBG" type="radio" default="light" class="btn-group btn-group-yesno" label="Body background">
+  					<option value="light">Light</option>
+  					<option value="dark">Dark</option>
+				</field>
+				<field name="bodyColor" type="color" default="#666666" label="Body color"/>
+				<field name="bodyLink" type="color" default="#0080FF" label="Link color"/>
+				<field type="spacer" name="myspacer3" class="text" label="&lt;b&gt;Social settings&lt;/b&gt;"/>
+				<field name="facebook" type="radio" default="facebook" class="btn-group btn-group-yesno" label="Facebook">
+  					<option value="facebook">Show</option>
+  					<option value=" ">Hide</option>
+				</field>
+
+				<field name="twitter" type="radio" default="twitter" class="btn-group btn-group-yesno" label="Twitter">
+  					<option value="twitter">Show</option>
+  					<option value=" ">Hide</option>
+				</field>
+
+				<field name="google" type="radio" default="google" class="btn-group btn-group-yesno" label="Google+">
+  					<option value="google">Show</option>
+  					<option value=" ">Hide</option>
+				</field>
+
+				<field name="faithlife" type="radio" default="faithlife" class="btn-group btn-group-yesno" label="Faithlife">
+  					<option value="faithlife">Show</option>
+  					<option value=" ">Hide</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
